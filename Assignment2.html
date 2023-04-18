@@ -105,8 +105,8 @@
         var map3 = new mapboxgl.Map({
             container: 'map3',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [2.2945,48.8584],
-            zoom: 17,
+            center: [-119.2895,45.8404],
+            zoom: 10,
             minZoom: 6,
             maxZoom: 15
         });
@@ -120,8 +120,8 @@
             .setLngLat([-119.2895,45.8404]) // starting position [lng, lat]
             .setPopup(popup) //add the popup to the marker 
             .addTo(map3);
-            //-119.2895,45.8404
-        map3.dragPan.disable();
+         
+            map3.dragPan.disable();
             map3.scrollZoom.disable();
             map3.boxZoom.disable();
             map3.dragRotate.disable();
